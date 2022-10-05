@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Willy Wonka's</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section class="header">
+		<div class="head">
+			<img src="logo.png" class="logo">
+			<h1 style="margin-left: 170px;">Willy Wonka's</h1>
+		</div>
+		<div class="nav">
+			<div class="container">
+				<ul class="main-nav">
+					<li><a href="home1.html">Home</a></li>	
+					<li><a href="products.html">Products</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="about-us.html">About Us</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="products">
+			<div class="container">
+				<div>
+					<h2 style="color: white;">Products</h2>
+						<span class="links">
+							<b>
+								<ul class="products-nav">
+									<li><a href="products.html">Gummy Candy</a></li>	
+									<li><a href="Chocolate Bars.html">Chocolate Bars</a></li>
+									<li><a href="Lollipops.html">Lollipops</a></li>
+								</ul>
+							</b>
+						</span>
+				</div>
+
+				<h1 class="shop-cart"><i class=" fa fa-shopping-cart"></i></h1>
+				<section>
+				<div class="item">
+					<img src="1.jpg" id="pic">
+					<p>Gummy Rain bow</p>
+					<h6>$10</h6>
+					<span></span>
+					<button class="add-to-cart">ADD TO CART</button>
+				</div>
+				<div class="item">
+					<img src="2.webp" id="pic">
+					<p>Gummy Bear</p>
+					<h6>$11</h6>
+					<span></span>
+					<button class="add-to-cart">ADD TO CART</button>
+				</div>
+				<div class="item">
+					<img src="3.jpg" id="pic">
+					<p>Gummy Worm</p>
+					<h6>$14</h6>
+					<span></span>
+					<button class="add-to-cart">ADD TO CART</button>
+				</div>
+				<div class="item">
+					<img src="4.jpg" id="pic">
+					<p>Gummy Teeth</p>
+					<h6>$17</h6>
+					<span></span>
+					<button class="add-to-cart">ADD TO CART</button>
+				</div>
+				<div class="item">
+					<img src="5.jpg" id="pic">
+					<p>Gummy Oranges</p>
+					<h6>$13</h6>
+					<span></span>
+					<button class="add-to-cart">ADD TO CART</button>
+				</div>
+				<div class="item">
+					<img src="6.jpg" id="pic">
+					<p>Gummy Cola</p>
+					<h6>$11</h6>
+					<span></span>
+					<button class="add-to-cart">ADD TO CART</button>
+				</div>
+				<div class="item">
+					<img src="7.jpg" id="pic">
+					<p>Gummy Balls</p>
+					<h6>$11</h6>
+					<span></span>
+					<button class="add-to-cart">ADD TO CART</button>
+				</div>
+				<div class="item">
+					<img src="8.jpg" id="pic">
+					<p>Gummy Piza</p>
+					<h6>$18</h6>
+					<span></span>
+					<button class="add-to-cart">ADD TO CART</button>
+				</div>
+				<div class="item">
+					<img src="9.jpg" id="pic">
+					<p>Gummy Strawberry</p>
+					<h6>$14</h6>
+					<span></span>
+					<button class="add-to-cart">ADD TO CART</button>
+				</div>
+
+				
+				</section>
+				<div class="select">
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="footer">
+		<h3 style="margin-left: 70px;">About Us</h3>
+		<div style="margin-left: 70px">
+			<p>Address:11007 Plam Drive Faculty Village, Los Baños, Laguna</p>
+			<p>Contact Number: 09093394040</p>
+			<p>Email: Willy Wonka's@gmail.com</p>
+		</div>
+	</section>
+
+	<script type="text/javascript">
+		var noti = document.querySelector('.shop-cart');
+		var select = document.querySelector('.select');
+		var button = document.getElementsByTagName('button');
+		for(var but of button){
+			but.addEventListener('click', (e)=>{
+				var add = Number(noti.getAttribute('data-count') || 0);
+				noti.setAttribute('data-count', add +1);
+				noti.classList.add('zero')
+
+				// copy and paste //
+				var parent = e.target.parentNode;
+				var clone = parent.cloneNode(true);
+				select.appendChild(clone);
+				clone.lastElementChild.innerText = "Buy-now";
+				
+				if (clone) {
+					noti.onclick = ()=>{
+						select.classList.toggle('display');
+					}	
+				}
+			})
+		}
+	</script>
+</body>
+</html>

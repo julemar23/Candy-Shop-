@@ -1,0 +1,210 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+		body {
+			font-family: 'Calibri';
+			margin: 0;
+			margin-top: 0;
+			background: url("candywp.jpg") no-repeat center fixed;
+			background-size: cover;
+		}
+
+		.head {
+			background-color: lightcoral;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			color: white;
+		}
+
+		.nav {
+		    border-bottom: 2px solid #e4e7ed;
+		    border-top: 3px solid #CA9A4E;
+		    height: 50px;
+		}
+
+		.main-nav {
+			float: left;
+			margin-left: -150px;
+			list-style: none;
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		li {
+			float: left;
+			margin-right: 35px;
+			font-size: 18px;
+			transition: 1s;
+		}
+
+		li:hover {
+			border-bottom: 2px solid white;
+		}
+
+		a {
+			text-decoration: none;
+			color: white;
+		}
+
+		.container {
+			padding-right: 15px;
+		    padding-left: 15px;
+		    margin-right: auto;
+		    margin-left: auto;
+		    width: 1000px;
+		}
+
+		.footer {
+			position: relative;
+		    min-height: 10vh;
+		    display: flex;
+		    justify-content: center;
+		    flex-direction: column;
+		    background-color: deeppink;
+		    color: white;
+		    padding-top: 15px;
+			padding-bottom: 30px;
+		}
+
+		.header {
+			min-height: 250vh;
+		    position: relative;
+		}
+
+		.products-nav {
+			display: inline-block;
+		}
+
+		#pic {
+			width: 300px;
+			height: 200px;
+			float: left;
+			position: relative;
+		    min-height: 1px;
+		    padding-right: 15px;
+		    padding-left: 15px;
+		    margin: 15px 0px;
+		    display: block;
+		}
+
+		div.item {
+		    vertical-align: top;
+		    display: inline-block;
+		    text-align: center;
+		}
+
+		.content {
+		  display: block;
+		  color: white;
+		  font-size: 20px;
+		}
+
+		.add-to-cart {
+			width: 200px;
+			height: 40px;
+			background-color: lightpink;
+			border: none;
+		}
+
+		.add-to-cart:hover {
+			background-color: #A9612B;
+			color: white;
+		}
+
+		.links {
+			position: absolute;
+			margin-left: 745px;
+			margin-top: -50px;	
+			display: block;
+		}
+
+		.shop-cart{
+		width: 3%;
+	    position: relative;
+	    top: -185px;
+	    left: 100%;
+	    cursor: pointer;
+		}
+
+		.shop-cart:before{
+			content: attr(data-count);
+		    color: white;
+		    position: absolute;
+		    right: 16px;
+		    font-size: 15px;
+		    text-align: center;
+		    top: -12px;
+		    width: 20px;
+		    height: 20px;
+		    background: red;
+		    border-radius: 50%;
+		    opacity: 0;
+		}
+
+		.shop-cart.zero:before{
+		opacity: 1;
+		}
+
+		p{
+			color: white;
+			font-size: 20px;
+		}
+		h6{
+		    font-size: 20px;
+		    color: white;
+		}
+		.select{
+			width: 50%;
+			height: 580px;
+			padding: 5%;
+			background: #222;
+			position: absolute;
+			top: -1000px;
+			left: 20%;
+			transition: 0.5s;
+			overflow-y: auto;
+			margin: auto;
+			margin-top: 100px;
+		}
+		.select.display{
+			top: 10px;
+		}
+		.select div{
+			width: 90%;
+			height: 200px;
+			display: flex;
+			padding: 5px;
+			border: 1px solid white;
+			position: relative;
+			margin: 5px auto;
+		}
+		.select div img{
+			width: 280px;
+			height: 70%;
+		}
+		.select div p{
+			padding: 35px;
+			color: white;
+		}
+		.select div h6,
+		.select div button{
+			position: absolute;
+			left: 60%;
+			top: 20%;
+			color: white;
+		}
+		.select div button{
+			left: 60%;
+			top: 55%;
+		}
+		span{
+			display: none;
+		}
+
+		.logo {
+			position: absolute;
+			width: 80px;
+			height: 80px;
+			margin-left: 70px;
+			border-radius: 50%;
+		}

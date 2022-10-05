@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<title>Willy Wonka's</title>
+	<style type="text/css">
+		body {
+			font-family: 'Calibri';
+			margin: 0;
+			margin-top: 0;
+			background: url("candywp.jpg") no-repeat center fixed;
+			background-size: cover;
+		}
+
+		.head {
+			background-color: lightcoral;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			color: white;
+		}
+
+		.nav {
+		    border-bottom: 2px solid #e4e7ed;
+		    border-top: 3px solid #CA9A4E;
+		    height: 50px;
+		}
+
+		.main-nav {
+			float: left;
+			margin-left: -150px;
+			list-style: none;
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		li {
+			float: left;
+			margin-right: 35px;
+			font-size: 18px;
+			transition: 1s;
+		}
+
+		li:hover {
+			border-bottom: 2px solid white;
+		}
+
+		a {
+			text-decoration: none;
+			color: white;
+		}
+
+		.container {
+			padding-right: 15px;
+		    padding-left: 15px;
+		    margin-right: auto;
+		    margin-left: auto;
+		    width: 1000px;
+		}
+
+		.footer {
+			position: relative;
+		    min-height: 10vh;
+		    display: flex;
+		    justify-content: center;
+		    flex-direction: column;
+		    background-color: #A9612B;
+		    color: white;
+		    padding-top: 15px;
+			padding-bottom: 30px;
+		}
+
+		.header {
+			min-height: 100vh;
+		    position: relative;
+		}
+
+		h1 {
+			font-size: 30px;
+		}
+
+		.contacts{
+			background-color: #fefefe;
+			margin: 7% auto 10%;
+			border: 1px solid #888;
+			width: 40%;
+			border-radius: 10px;
+		}
+
+		.logo {
+			position: absolute;
+			width: 80px;
+			height: 80px;
+			margin-left: 70px;
+			border-radius: 50%;
+		}
+
+		img {
+			width: 40px;
+			height: 40px;
+			margin: 0 20px;
+		}
+
+		input[type=text], input[type=email] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
+
+		.container1 {
+			padding: 16px;
+		}
+
+		button {
+			background-color: #A9612B;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<section class="header">
+		<div class="head">
+			<img src="logo.png" class="logo">
+			<h1 style="margin-left: 170px;">Willy Wonka's</h1>
+		</div>
+		<div class="nav">
+			<div class="container">
+				<ul class="main-nav">
+					<li><a href="home1.html">Home</a></li>	
+					<li><a href="products.html">Products</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="about-us.html">About Us</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="contacts">
+			<div class="container1">
+				<h1>Have any questions? Send us a message!</h1>
+				<div class="input">
+					<label><b>Name:</b></label>
+					<input type="text">
+				</div>
+				<div class="input">
+					<label><b>Telephone:</b></label>
+					<input type="text">
+				</div>
+				<div class="input">
+					<label><b>Email:</b></label>
+					<input type="email">
+				</div>
+				<div class="input">
+					<label><b>Subject:</b></label>
+					<input type="text">
+				</div>
+				<div class="input">
+					<label><b>Message:</b></label>
+					<input type="text">
+				</div>
+				<button type="submit">Submit</button><br>
+				<center>
+					<h1>Follow Us!</h1>
+					<img src="fb.png">
+					<img src="twit.png">
+					<img src="insta.png">
+				</center>
+			</div>
+		</div>
+	</section>
+
+	<section class="footer">
+		<h3 style="margin-left: 70px;">About Us</h3>
+		<div style="margin-left: 70px">
+			<p>Address: 11007 Plam Drive Faculty Village, Los Baños, Laguna</p>
+			<p>Contact Number: 09093394040</p>
+			<p>Email: Willy Wonka's@gmail.com</p>
+		</div>
+	</section>
+</body>
+</html>
